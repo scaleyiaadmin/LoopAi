@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Loop AI — Curadoria de Inteligência Artificial direto no seu WhatsApp. Receba as 3 notícias mais relevantes de IA todo dia às 7h, traduzidas do jargão técnico para a aplicação prática." />
+  <meta property="og:title" content="Loop AI — IA que Importa, Direto no WhatsApp" />
+  <meta property="og:description" content="Você dorme e a IA avança. O Loop AI lê tudo, traduz o jargão técnico e entrega a aplicação prática direto no seu WhatsApp em 2 minutos." />
+  <meta property="og:type" content="website" />
+  <title>Loop AI — IA que Importa, Direto no WhatsApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ░░ NAV ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <div class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="url(#logoGrad)" stroke-width="2.5"/>
+            <path d="M8 16 C8 10 13 7 16 10 C19 13 24 10 24 16 C24 22 19 25 16 22 C13 19 8 22 8 16Z" fill="url(#logoGrad)" opacity="0.9"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00F5C4"/>
+                <stop offset="100%" stop-color="#3B82F6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">Loop <span class="logo-accent">AI</span></span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#o-que-e" class="nav-link">O que é</a>
+        <a href="#beneficios" class="nav-link">Benefícios</a>
+        <a href="#planos" class="nav-link">Planos</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="https://chat.whatsapp.com/F75r1ZJN8uIJVhtooTRiS0" target="_blank" rel="noopener" class="btn btn-nav" id="nav-cta">
+          Entrar na Lista →
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="container hero-container-centered">
+      <div class="hero-badge" data-aos="fade-down">
+        <span class="badge-dot"></span>
+        MVP Gratuito · Lista de Espera Aberta
+      </div>
+
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+        Você dorme.<br />
+        A IA avança.<br />
+        <span class="hero-gradient-text">O Loop AI te atualiza.</span>
+      </h1>
+
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+        Curadoria inteligente de Inteligência Artificial direto no seu WhatsApp.<br />
+        <strong>2 minutos por dia</strong> — sem abrir outro app, sem perder horas.
+      </p>
+
+      <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://chat.whatsapp.com/F75r1ZJN8uIJVhtooTRiS0" target="_blank" rel="noopener" class="btn btn-primary btn-xl" id="hero-cta-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.114 1.535 5.845L.057 23.197a.75.75 0 00.92.92l5.352-1.478A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.704 9.704 0 01-5.065-1.427l-.363-.215-3.76 1.037 1.037-3.76-.215-.363A9.704 9.704 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          Entrar Grátis na Lista de Espera
+        </a>
+        <a href="#o-que-e" class="btn btn-ghost" id="hero-cta-secondary">
+          Ver como funciona ↓
+        </a>
+      </div>
+
+      <!-- Feature pills -->
+      <div class="hero-pills" data-aos="fade-up" data-aos-delay="380">
+        <span class="hero-pill">💊 Daily Pill às 7h</span>
+        <span class="hero-pill">⚡ Assistente no WhatsApp</span>
+        <span class="hero-pill">🧠 Comunidade curada</span>
+        <span class="hero-pill">🔒 100% Grátis agora</span>
+      </div>
+
+      <div class="hero-social-proof" data-aos="fade-up" data-aos-delay="450">
+        <div class="avatars">
+          <img src="https://i.pravatar.cc/32?img=1" alt="Usuário 1" class="avatar" />
+          <img src="https://i.pravatar.cc/32?img=5" alt="Usuário 2" class="avatar" />
+          <img src="https://i.pravatar.cc/32?img=8" alt="Usuário 3" class="avatar" />
+          <img src="https://i.pravatar.cc/32?img=12" alt="Usuário 4" class="avatar" />
+        </div>
+        <p class="proof-text"><strong>+240 profissionais</strong> já na lista de espera</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROBLEMA ░░ -->
+  <section class="section section-problem" id="o-que-e">
+    <div class="container">
+      <div class="section-label" data-aos="fade-up">O Problema</div>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+        A IA avança todos os dias.<br />Mas quem tem tempo de acompanhar?
+      </h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Profissionais que querem se manter relevantes enfrentam um paradoxo real:
+      </p>
+
+      <div class="problem-grid" data-aos="fade-up" data-aos-delay="150">
+        <div class="problem-card">
+          <div class="problem-icon">😵‍💫</div>
+          <h3>Overdose de Informação</h3>
+          <p>Dezenas de newsletters, podcasts, threads e papers novos toda semana. Impossível consumir tudo com qualidade.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📣</div>
+          <h3>Excesso de Hype</h3>
+          <p>Notícias sensacionalistas que na prática não mudam nada. Difícil separar o sinal do ruído.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🌀</div>
+          <h3>Falta de Clareza</h3>
+          <p>Jargão técnico, papers densos e anúncios das big techs sem contexto prático para o dia a dia.</p>
+        </div>
+      </div>
+
+      <div class="problem-arrow" data-aos="fade-up" data-aos-delay="200">
+        <svg width="32" height="48" viewBox="0 0 32 48" fill="none"><path d="M16 0V40M16 40L4 28M16 40L28 28" stroke="url(#arrowGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="arrowGrad" x1="0" y1="0" x2="32" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00F5C4"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs></svg>
+        <p>O Loop AI resolve cada um desses problemas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SOLUÇÃO / BENEFÍCIOS ░░ -->
+  <section class="section section-benefits" id="beneficios">
+    <div class="container">
+      <div class="section-label" data-aos="fade-up">A Solução</div>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+        Tudo que você precisa saber.<br /><span class="hero-gradient-text">Nada que você não precise.</span>
+      </h2>
+
+      <div class="benefits-grid">
+        <!-- Card 1 -->
+        <div class="benefit-card benefit-card--featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="benefit-number">01</div>
+          <div class="benefit-icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" stroke="url(#b1)" stroke-width="2"/><path d="M10 18h16M18 10v16" stroke="url(#b1)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="b1" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00F5C4"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs></svg>
+          </div>
+          <h3>Daily Pill 💊</h3>
+          <p>Todo dia às <strong>7h da manhã</strong> você recebe as <strong>3 notícias mais relevantes de IA</strong> com fato, contexto e por que aquilo importa para o seu trabalho.</p>
+          <div class="benefit-tag">Todo dia · 7h · 2 min de leitura</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="benefit-number">02</div>
+          <div class="benefit-icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="2" y="8" width="32" height="22" rx="4" stroke="url(#b2)" stroke-width="2"/><path d="M10 17h16M10 21h10" stroke="url(#b2)" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="9" r="5" fill="#00F5C4"/><defs><linearGradient id="b2" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00F5C4"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs></svg>
+          </div>
+          <h3>Assistente Rápido ⚡</h3>
+          <p>Chat integrado no WhatsApp. Digite <code>/resumo</code>, faça perguntas sobre conceitos complexos e receba respostas claras na hora.</p>
+          <div class="benefit-tag">Resposta imediata · Sem abrir novo app</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="benefit-number">03</div>
+          <div class="benefit-icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4C10.268 4 4 10.268 4 18s6.268 14 14 14 14-6.268 14-14S25.732 4 18 4z" stroke="url(#b3)" stroke-width="2"/><path d="M12 18c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6" stroke="url(#b3)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="b3" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00F5C4"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs></svg>
+          </div>
+          <h3>Comunidade Curada 🧠</h3>
+          <p>Grupo moderado ativamente para profissionais sérios. Sem spam, sem hype. Só ferramentas reais, estudos relevantes e debates de alto nível.</p>
+          <div class="benefit-tag">Grupo exclusivo · Moderação ativa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ COMPARAÇÃO ░░ -->
+  <section class="section section-compare" id="comparacao">
+    <div class="container">
+      <div class="section-label" data-aos="fade-up">Loop AI vs. Concorrência</div>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+        Tudo o que as newsletters<br /><span class="hero-gradient-text">não conseguem te dar.</span>
+      </h2>
+
+      <div class="vs-table-wrap" data-aos="fade-up" data-aos-delay="100">
+        <div class="vs-header">
+          <div class="vs-header-spacer">Recurso</div>
+          <div class="vs-header-competitor">📰 Newsletter Tradicional</div>
+          <div class="vs-header-us">Loop AI ✨</div>
+        </div>
+
+        <div class="vs-row">
+          <div class="vs-feature">Tempo de leitura</div>
+          <div class="vs-competitor"><span class="vs-no">❌</span> 15–60 min por edição</div>
+          <div class="vs-us"><span class="vs-yes">✅</span> <strong>2 minutos</strong></div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-feature">Contexto prático</div>
+          <div class="vs-competitor"><span class="vs-no">❌</span> Raro — foca no fato bruto</div>
+          <div class="vs-us"><span class="vs-yes">✅</span> <strong>Sempre incluso</strong></div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-feature">Onde você consome</div>
+          <div class="vs-competitor"><span class="vs-warn">⚠️</span> Precisa abrir o e-mail</div>
+          <div class="vs-us"><span class="vs-yes">✅</span> <strong>WhatsApp — já aberto</strong></div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-feature">Chat e perguntas</div>
+          <div class="vs-competitor"><span class="vs-no">❌</span> Não existe</div>
+          <div class="vs-us"><span class="vs-yes">✅</span> <strong>Assistente integrado</strong></div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-feature">Curadoria anti-hype</div>
+          <div class="vs-competitor"><span class="vs-warn">⚠️</span> Depende do autor</div>
+          <div class="vs-us"><span class="vs-yes">✅</span> <strong>IA + revisão humana</strong></div>
+        </div>
+        <div class="vs-row vs-row--last">
+          <div class="vs-feature">Preço</div>
+          <div class="vs-competitor"><span class="vs-warn">⚠️</span> R$0–R$150/mês</div>
+          <div class="vs-us"><span class="vs-yes">✅</span> <strong>100% Grátis agora</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ COMO FUNCIONA ░░ -->
+  <section class="section section-how" id="como-funciona">
+    <div class="container">
+      <div class="section-label" data-aos="fade-up">Como Funciona</div>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+        3 passos. Simples assim.
+      </h2>
+
+      <div class="steps-grid">
+        <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Entre na Lista de Espera</h3>
+            <p>Clique no botão e entre no nosso grupo do WhatsApp. Vagas liberadas toda semana em lotes.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Receba sua Daily Pill</h3>
+            <p>Todo dia às 7h você recebe automaticamente as 3 notícias mais relevantes de IA com contexto e aplicação prática.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Pergunte e Explore</h3>
+            <p>Use o assistente integrado para tirar dúvidas, pedir resumos e aprofundar qualquer tema quando quiser.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PLANOS ░░ -->
+  <section class="section section-plans" id="planos">
+    <div class="container">
+      <div class="section-label" data-aos="fade-up">Planos</div>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+        Comece grátis.<br />Evolua quando precisar.
+      </h2>
+
+      <div class="plans-grid">
+        <!-- Free -->
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="plan-header">
+            <div class="plan-badge plan-badge--free">🟢 Disponível Agora</div>
+            <h3 class="plan-name">Loop Free</h3>
+            <div class="plan-price">
+              <span class="price-value">R$0</span>
+              <span class="price-period">/ para sempre</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>✅ Daily Pill todos os dias às 7h</li>
+            <li>✅ Assistente de chat integrado</li>
+            <li>✅ Acesso à comunidade curada</li>
+            <li>✅ Resumos on-demand</li>
+            <li>✅ Sem cartão de crédito</li>
+          </ul>
+          <a href="https://chat.whatsapp.com/F75r1ZJN8uIJVhtooTRiS0" target="_blank" rel="noopener" class="btn btn-primary btn-full" id="plan-free-cta">
+            Entrar na Lista de Espera
+          </a>
+        </div>
+
+        <!-- Pro -->
+        <div class="plan-card plan-card--pro" data-aos="fade-up" data-aos-delay="150">
+          <div class="plan-glow"></div>
+          <div class="plan-header">
+            <div class="plan-badge plan-badge--pro">⚡ Em Breve · Loop Pro</div>
+            <h3 class="plan-name">Loop Pro</h3>
+            <div class="plan-price">
+              <span class="price-value">Em breve</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>✅ Tudo do Loop Free</li>
+            <li>✅ Tutoriais de criação de AI Agents</li>
+            <li>✅ Hub de ferramentas secretas</li>
+            <li>✅ Consultorias fechadas</li>
+            <li>✅ Acesso prioritário a novidades</li>
+            <li>✅ Comunidade de builders</li>
+          </ul>
+          <button class="btn btn-outline btn-full" id="plan-pro-cta" disabled style="opacity: 0.5; cursor: not-allowed;">
+            🚀 Em Breve
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ DEPOIMENTOS ░░ -->
+  <section class="section section-testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-label" data-aos="fade-up">Comunidade</div>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">
+        O que dizem os primeiros membros
+      </h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Finalmente consigo acompanhar IA sem perder horas. A Daily Pill é o primeiro WhatsApp que abro de manhã."</p>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/40?img=3" alt="Foto de Pedro" class="testimonial-avatar" />
+            <div>
+              <strong>Pedro M.</strong>
+              <span>Gerente de Produto · São Paulo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"A curadoria é impecável. Nada de hype, só o que realmente muda alguma coisa. Indico para todo mundo do meu time."</p>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/40?img=9" alt="Foto de Ana" class="testimonial-avatar" />
+            <div>
+              <strong>Ana L.</strong>
+              <span>Head de Dados · Rio de Janeiro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"O comando /resumo salvou minha vida. Consigo explicar conceitos de IA em reuniões sem ter estudado nada."</p>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/40?img=15" alt="Foto de Rafael" class="testimonial-avatar" />
+            <div>
+              <strong>Rafael S.</strong>
+              <span>Empreendedor · Florianópolis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FAQ ░░ -->
+  <section class="section section-faq" id="faq">
+    <div class="container container--narrow">
+      <div class="section-label" data-aos="fade-up">FAQ</div>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">Perguntas Frequentes</h2>
+
+      <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+        <details class="faq-item" id="faq-1">
+          <summary class="faq-question">Preciso instalar algum aplicativo?</summary>
+          <div class="faq-answer">
+            <p>Não! O Loop AI funciona 100% pelo WhatsApp que você já usa. Sem downloads, sem cadastros complicados.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" id="faq-2">
+          <summary class="faq-question">Como funciona a lista de espera?</summary>
+          <div class="faq-answer">
+            <p>Para garantir qualidade e moderação, liberamos vagas toda semana em lotes. Quando você entra na lista, receberá um aviso no WhatsApp quando sua vaga estiver disponível.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" id="faq-3">
+          <summary class="faq-question">Realmente é gratuito? Qual é o truque?</summary>
+          <div class="faq-answer">
+            <p>Sim, 100% gratuito na Fase 1 (MVP). Estamos construindo nossa comunidade e validando o produto. No futuro teremos um plano Pro pago, mas o básico sempre será livre.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" id="faq-4">
+          <summary class="faq-question">Posso sair a qualquer momento?</summary>
+          <div class="faq-answer">
+            <p>Claro! Basta sair do grupo do WhatsApp quando quiser. Sem burocracia, sem emails de cancelamento.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" id="faq-5">
+          <summary class="faq-question">O que é o Loop Pro e quando vai lançar?</summary>
+          <div class="faq-answer">
+            <p>O Loop Pro é nossa camada premium focada em builders, desenvolvedores e negócios. Terá tutoriais de criação de AI Agents, hub de ferramentas e consultorias. Em breve — entre na lista e será o primeiro a saber!</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CTA FINAL ░░ -->
+  <section class="section section-final-cta" id="cta-final">
+    <div class="cta-bg">
+      <div class="orb orb-cta-1"></div>
+      <div class="orb orb-cta-2"></div>
+    </div>
+    <div class="container">
+      <div class="final-cta-box" data-aos="zoom-in">
+        <div class="section-label">Vagas Limitadas</div>
+        <h2 class="final-cta-title">
+          A IA não vai esperar você.<br />
+          <span class="hero-gradient-text">Mas nós guardamos sua vaga.</span>
+        </h2>
+        <p class="final-cta-sub">
+          Entre na lista agora. Gratuito. Sem cartão de crédito.<br />
+          Vagas liberadas toda semana em lotes.
+        </p>
+        <a href="https://chat.whatsapp.com/F75r1ZJN8uIJVhtooTRiS0" target="_blank" rel="noopener" class="btn btn-primary btn-xl" id="final-cta-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.114 1.535 5.845L.057 23.197a.75.75 0 00.92.92l5.352-1.478A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.704 9.704 0 01-5.065-1.427l-.363-.215-3.76 1.037 1.037-3.76-.215-.363A9.704 9.704 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          Entrar Grátis na Lista de Espera
+        </a>
+        <p class="cta-guarantee">🔒 Sem spam · Saia quando quiser · 100% WhatsApp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="logo-icon">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="url(#fLogo)" stroke-width="2.5"/><path d="M8 16 C8 10 13 7 16 10 C19 13 24 10 24 16 C24 22 19 25 16 22 C13 19 8 22 8 16Z" fill="url(#fLogo)" opacity="0.9"/><defs><linearGradient id="fLogo" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00F5C4"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs></svg>
+            </div>
+            <span class="logo-text">Loop <span class="logo-accent">AI</span></span>
+          </a>
+          <p class="footer-tagline">Curadoria de IA direto no seu WhatsApp.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <span class="footer-col-title">Produto</span>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#planos">Planos</a>
+            <a href="#como-funciona">Como Funciona</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Contato</span>
+            <a href="https://chat.whatsapp.com/F75r1ZJN8uIJVhtooTRiS0" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:oi@loopai.com.br">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Loop AI · Feito com ☕ no Brasil</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
